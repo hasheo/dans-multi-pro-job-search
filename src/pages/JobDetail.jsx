@@ -13,7 +13,6 @@ const JobDetail = (props) => {
   useEffect(() => {
     axios.get(`http://dev3.dansmultipro.co.id/api/recruitment/positions/${jobId}`)
     .then((res) => {
-      console.log(res)
       setJobDetail(res.data)
     })  
   }, [])

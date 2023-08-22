@@ -47,7 +47,6 @@ const JobList = () => {
 
     axios.get(baseUrl+params)
     .then((res) => {
-      console.log("search result", res)
       setJobList(res.data)
     })
   }
